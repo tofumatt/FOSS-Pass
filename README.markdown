@@ -17,9 +17,9 @@ There's a Google Analytics script in the end of the "`page.html`" file in **`sys
 
 ## License ##
 
-This program is free software; it is distributed under a [New BSD-Style License](http://foss-pass.org/license/bsd?author=Matthew+Riley+MacPherson&organization=The+Lonely+Web&year=2009).
+This program is free software; it is distributed under a [New BSD-Style License](http://fosspass.org/license/bsd?author=Matthew+Riley+MacPherson&organization=The+Lonely+Web&year=2009).
 
-This program was built using the [CodeIgniter PHP Framework](http://codeigniter.com), which is [under its own license](http://foss-pass.org/license/codeigniter). Only relevant parts of the framework are included (database and other libraries, etc. were removed).
+This program was built using the [CodeIgniter PHP Framework](http://codeigniter.com), which is [under its own license](http://fosspass.org/license/codeigniter). Only relevant parts of the framework are included (database and other libraries, etc. were removed).
 
 The "Fork me on GitHub" logo is licensed under an [MIT-style license](http://fosspass.org/license/mit?author=Tom+Preston-Werner&year=2008).
 

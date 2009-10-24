@@ -1,0 +1,21 @@
+#nav h3 a {
+	margin-bottom: -.5em;
+}
+
+label, #submit {
+	clear: both;
+	display: block;
+	float: none;
+}
+
+#submit {
+	background: #2d1f1f;
+	border: 1px solid #eeeae4;
+	color: #eeeae4;
+	display: block;
+	height: 40px;
+	font-size: 22px;
+	margin: 0 0 0 80px;
+	outline: none;
+	width: 125px;
+}

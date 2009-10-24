@@ -1,0 +1,5 @@
+<ul>
+	<?php foreach ($licenses as $link => $license): ?>
+		<li><a href="<?php echo site_url("license/$link") ?>"><?php echo $license['name'] ?></a></li>
+	<?php endforeach; ?>
+</ul>

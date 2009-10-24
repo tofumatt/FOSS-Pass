@@ -1,0 +1,38 @@
+#paper-bg {
+	background-image: url(../images/bg-paper-8_bit.png);
+	height: expression(parseInt(document.body.offsetHeight) + 'px');
+}
+
+#title {
+	background-image: url(../images/header-8_bit.png) !important;
+}
+
+#fork-me-link {
+	background-image: url(../images/fork-me-8_bit.png);
+}
+
+#nav h3 a, #top-link, #xhtml-valid-link, input, label {
+	display: inline;
+}
+
+#nav h3 a {
+	margin-bottom: -.5em;
+}
+
+label, #submit {
+	clear: both;
+	display: block;
+	float: none;
+}
+
+#submit {
+	background: #2d1f1f;
+	border: 1px solid #eeeae4;
+	color: #eeeae4;
+	display: block;
+	height: 40px;
+	font-size: 22px;
+	margin: 0 0 0 80px;
+	outline: none;
+	width: 125px;
+}

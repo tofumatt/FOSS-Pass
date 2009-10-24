@@ -1,0 +1,13 @@
+<p>The page you're looking for doesn't exist — <?php if (isset($_SERVER['HTTP_REFERER'])): ?>looks like the link that sent you here wasn't quite right.<?php else: ?>perhaps you mistyped the URL?<?php endif; ?></p>
+
+<h2>Suggestions</h2>
+
+<p>You can try looking through the popular licenses:</p>
+
+<?php echo render('popular-licenses') ?>
+
+<p>If the license you're looking for isn't on that list, have a look through <a href="<?php echo site_url('all-licenses') ?>">all licenses available on the site</a>.</p>
+
+<h2>Still Confused?</h2>
+
+<p>Don't quite get what the site is about? In one sentence, it's a <strong>repository of free and open-source licenses</strong> that you can link to. <a href="<?php echo site_url('about') ?>">Find out more on the about page</a>.</p>

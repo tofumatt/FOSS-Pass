@@ -1,0 +1,29 @@
+<?php if (isset($license_page) and sizeof($license_attributes) > 0 and empty($_GET)): ?>
+	<form id="customize" action="<?php echo site_url("license/$license") ?>" method="get">
+		<div>
+			<h3>Customize This License</h3>
+			
+			<?php if (in_array('author', $license_attributes)): ?>
+				<label for="author">Author: </label>
+				<input type="text" name="author" value="" id="author">
+			<?php endif; ?>
+			<?php if (in_array('organization', $license_attributes)): ?>
+				<label for="organization">Organization: </label>
+				<input type="text" name="organization" value="" id="organization">
+			<?php endif; ?>
+			<?php if (in_array('year', $license_attributes)): ?>
+				<label for="year">Year: </label>
+				<input type="text" name="year" value="" id="year">
+			<?php endif; ?>
+			
+			<span class="block clear-both"></span>
+			
+			<label for="submit" class="hide">Create Custom License Link</label>
+			<input type="submit" value="Customize" id="submit">
+		</div>
+	</form>
+<?php elseif (isset($license_page) and sizeof($license_attributes) > 0 and !empty($_GET)): ?>
+	<div id="customize">
+		<h3><a href="<?php echo site_url("license/$license") ?>#customize">Make Your Own Copy Of This License</a></h3>
+	</div>
+<?php endif; ?>

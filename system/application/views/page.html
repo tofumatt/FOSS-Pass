@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $lang ?>" lang="<?php echo $lang ?>">
+<head>
+	<meta http-equiv="Content-Type"        content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-Type"  content="text/css" />
+	<meta http-equiv="Content-Script-Type" content="application/javascript" />
+	
+	<title><?php echo $title ?> &ndash; <?php echo APP_NAME ?></title>
+	
+	<style type="text/css" media="screen">
+		@import url(<?php echo "{$base_url}public/styles/styles.css" ?>);
+	</style>
+	<!--[if IE 6]><style type="text/css" media="screen">
+		@import url(<?php echo "{$base_url}public/styles/ie-6.css" ?>);
+	</style><![endif]-->
+	<!--[if IE 7]><style type="text/css" media="screen">
+		@import url(<?php echo "{$base_url}public/styles/ie-7.css" ?>);
+	</style><![endif]-->
+</head>
+
+<body>
+	
+	<div id="paper-bg"></div>
+	
+	<div id="wrapper">
+		<div id="page">
+			<div id="header">
+				<span id="top"></span>
+				<a id="title" href="<?php echo site_url() ?>"><?php echo APP_NAME ?>: Link to your license.</a>
+			</div>
+			
+			<div id="nav">
+				<?php echo render('nav') ?>
+			</div>
+			
+			<div id="content">
+				<h1><?php echo $title ?><?php if (isset($license_page) and $license_page): ?> (<a href="<?php echo site_url("license/$license.txt$encoded_get_string") ?>">txt</a>)<?php endif; ?></h1>
+				
+				<?php echo $content ?>
+				
+				<?php echo render('license_maker') ?>
+			</div>
+			
+			<div id="footer">
+				<a id="top-link" class="block clear-both" href="#top">To Top</a>
+				
+				<a id="xhtml-valid-link" href="http://validator.w3.org/check?uri=referer" class="no-change"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" /></a>
+				
+				<p><span id="copyright">Copyright © 2009 <a href="http://lonelyvegan.com">Matthew Riley MacPherson</a></span>.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="fork-me">
+		<a href="http://github.com/tofumatt/FOSS-Pass" id="fork-me-link">Fork me on GitHub.</a>
+	</div>
+	
+	<script type="text/javascript">
+	var gaJsHost = (('https:' == document.location.protocol) ? 'https://ssl.' : 'http://www.');
+	document.write(unescape('%3Cscript src="' + gaJsHost + 'google-analytics.com/ga.js" type="text/javascript"%3E%3C/script%3E'));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker('UA-3850161-8');
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+	
+	<!-- Render time: {elapsed_time} || Memory usage: {memory_usage} -->
+</body>
+</html>

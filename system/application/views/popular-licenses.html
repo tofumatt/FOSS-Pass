@@ -1,0 +1,5 @@
+<ul>
+	<?php foreach ($popular_licenses as $key): ?>
+		<li><a href="<?php echo site_url("license/$key") ?>"><?php echo $licenses[$key]['name'] ?></a></li>
+	<?php endforeach; ?>
+</ul>

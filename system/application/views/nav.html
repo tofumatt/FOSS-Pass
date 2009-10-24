@@ -1,0 +1,15 @@
+<h3><a href="<?php echo site_url() ?>">Home</a></h3>
+<h3><a href="<?php echo site_url('popular-licenses') ?>">Popular Licenses</a></h3>
+<ul class="hide">
+	<?php foreach ($popular_licenses as $key): ?>
+		<li><a href="<?php echo site_url("license/$key") ?>"><?php echo $licenses[$key]['name'] ?></a></li>
+	<?php endforeach; ?>
+</ul>
+<h3><a href="<?php echo site_url('all-licenses') ?>">All Licenses</a></h3>
+<ul class="hide">
+	<?php foreach ($licenses as $link => $license): ?>
+		<li><a href="<?php echo site_url("license/$link") ?>"><?php echo $license['name'] ?></a></li>
+	<?php endforeach; ?>
+</ul>
+<h3><a href="<?php echo site_url('about') ?>">About This Site</a></h3>
+<span class="block clear-both"></span>

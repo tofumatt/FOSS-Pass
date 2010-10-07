@@ -1,11 +1,13 @@
 # FOSS Pass #
 ## Link to your license. ##
 
-FOSS Pass allows you to link to many popular open-source licenses and even include your own info in the license text.
+FOSS Pass allowed you to link to many popular open-source licenses and even include your own info in the license text. It never really got used by anyone but me and I've since taken it down. It was a response to Google Code linking to the OSI's ugly pages with FOSS license text.
+
+The code is here for reference/posterity's sake.
 
 ### Setup ###
 
-You'll need a web server and [PHP 5](http://php.net) -- that's about it. Access to the filesystem (system/cache) for writing cache files is nice, but not required. Also, most modern web servers should work fine -- this app was developed on [Apache 2](http://httpd.apache.org) (mod_php) but [The FOSS Pass site itself](http://fosspass.org) runs on lighttpd 1.4 with PHP served through FastCGI.
+You'll need a web server and [PHP 5](http://php.net) -- that's about it. Access to the filesystem (system/cache) for writing cache files is nice, but not required. Also, most modern web servers should work fine -- this app was developed on [Apache 2](http://httpd.apache.org) (mod_php) but The FOSS Pass site itself ran on lighttpd 1.4 with PHP served through FastCGI.
 
 You might have to change the `$config['uri_protocol']` setting in **`system/application/config/config.php`** depending on your server/PHP setup. On Apache 2 "`AUTO`" is usually fine, but on lighttpd 1.4 with FastCGI "`REQUEST_URI`" seems to be the only setting that works.
 
@@ -17,12 +19,12 @@ There's a Google Analytics script in the end of the "`page.html`" file in **`sys
 
 ## License ##
 
-This program is free software; it is distributed under a [New BSD-Style License](http://fosspass.org/license/bsd?author=Matthew+Riley+MacPherson&organization=The+Lonely+Web&year=2009).
+This program is free software; it is distributed under a New BSD-Style License.
 
-This program was built using the [CodeIgniter PHP Framework](http://codeigniter.com), which is [under its own license](http://fosspass.org/license/codeigniter). Only relevant parts of the framework are included (database and other libraries, etc. were removed).
+This program was built using the [CodeIgniter PHP Framework](http://codeigniter.com), which is [under its own license](http://codeigniter.com/user_guide/license.html). Only relevant parts of the framework are included (database and other libraries, etc. were removed).
 
-The "Fork me on GitHub" logo is licensed under an [MIT-style license](http://fosspass.org/license/mit?author=Tom+Preston-Werner&year=2008).
+The "Fork me on GitHub" logo is licensed under an MIT-style license by Tom Preston-Werner, 2008.
 
 ---
 
-Copyright (c) 2009 [Matthew Riley MacPherson](http://lonelyvegan.com).
+Copyright (c) 2009-2010 [Matthew Riley MacPherson](http://lonelyvegan.com).
